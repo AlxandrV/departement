@@ -1,0 +1,21 @@
+header{
+    font-family: 'Baloo Paaji 2', cursive;
+    font-style: italic;
+}
+
+body{
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 1em;
+    background-image: url(Images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
