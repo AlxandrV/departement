@@ -1,21 +1,54 @@
-header{
-    font-family: 'Baloo Paaji 2', cursive;
-    font-style: italic;
+/* Var --------------------*/
+:root{
+    --col-primary: #2E2E2E;
+    --bg-primary: #EEE4E1;
 }
 
+/* Class ------------------*/
+.d-flex{    display: flex;  }
+.jc-between{    justify-content: space-between; }
+.jc-center{ justify-content: center;    }
+.align-center{  align-items: center;    }
+.w-100{ width: 100%;    }
+
+/* Generic ----------------*/
+ul{ list-style: none;   }
+
+a{
+    text-decoration: none;
+    color: var(--col-primary);
+}
+
+/* Body ____________________________________________________________________________________________________*/
 body{
-    font-family: 'Baloo Paaji 2', cursive;
-    font-size: 1em;
-    background-image: url(Images/background.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0;
 }
 
-h1{
-    font-size: 3rem;
+/* Header __________________________________________________________________________________________________*/
+header > div{    
+    padding: 0 3rem;
+    background-color: var(--bg-primary);
 }
 
-h2{
-    font-size: 2rem;
+header > div > div{
+    width: 20%; 
+    text-align: center;
+}
+
+header figure{  margin: 0;  }
+
+header nav{ width: 33.75rem;    }
+
+header ul{  padding: 0; }
+
+.actual-links{
+    border-bottom: solid 3px #B2967D;
+}
+
+header li:not(.actual-links){
+    transition-duration: 250ms;
+    transition-property: border-bottom;
+}
+header li:hover{
+    border-bottom: solid 3px #B2967D;
 }
