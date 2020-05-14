@@ -3,62 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
     <title>Lieux incontournable</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <figure><img src="Images/logo_site.png" alt="Logo du site"/></figure>
-        <p>Parisiens pour les uns, provinciaux pour les autres !</p>
+        <div class="d-flex jc-between">
+            <div class="d-flex align-center">
+                <figure><img src="media/logo_site.png" alt="Roue de mou;in au-dessus d'un cours d'eau" width="200" height="94"/></figure>
+            </div>
+            <nav class="d-flex align-center">
+                <ul class="d-flex jc-between w-100">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="actual-links"><a href="lieux.html">Lieux incontournables</a></li>
+                    <li><a href="marche.html">Marché et foires</a></li>
+                    <li><a href="actualite.html">Actualités</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="d-flex jc-center align-center">
+            <h1>Lieu incontournables</h1>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="accueil_depart.html">Accueil</a></li>
-            <li><a href="lieux_depart.html">Lieux incontournables</a></li>
-            <li><a href="marche_depart.html">Marché et foires</a></li>
-            <li><a href="actualite_depart.html">Actualités</a></li>
-        </ul>
-    </nav>
     <main>
-        <h1>10 lieux incontournable en Seine-et-Marne</h1>
+        <section id="introduction">
+            <h2>Seine-et-Marne</h2>
+            <div class="m-auto"></div>
+            <p>10 lieux incontournable en Seine-et-Marne</p>
+        </section>
 
-        <h2>Château de Fontainebleau</h2>
-        <a href="Images/Lieu/fontainebleau.jpg"><img src="Images/Lieu/fontainebleau_mini.jpg" alt="Château de Fontainebleau"/></a>
+        <div id="content" class="m-auto box-siz d-flex wrap">
+            <div class="column box-siz padding-1rem">
+                <div class="content col-content box-siz padding-1rem">
+                    <h2>Château de Fontainebleau</h2>
+                    <div>
+                        <a href="media/fontainebleau.jpg"><img class="minImage" src="media/fontainebleau.jpg" alt="Château de Fontainebleau"/></a>
+                    </div>
+                </div>
+                
+                <div class="content col-content box-siz padding-1rem">
+                    <h2>Provins</h2>
+                    <div>
+                        <a href="media/provins.jpg"><img class="minImage" src="media/provins.jpg" alt="Ville de Provins"/></a>
+                    </div>
+                </div>
+    
+        
+                <div class="content col-content box-siz padding-1rem">
+                    <h2>DisneyLand</h2>
+                    <div>
+                        <a href="media/disneyland.jpg"><img class="minImage" src="media/disneyland.jpg" alt="DisneyLand"/></a>
+                    </div>
+                </div>
+    
+        
+                <div class="content col-content box-siz padding-1rem">
+                    <h2>Barbizon</h2>
+                    <div>
+                        <a href="media/barbizon.jpg"><img class="minImage" src="media/barbizon.jpg" alt="Statue à Barbizon"/></a>
+                    </div>
+                </div>         
+            </div>
+            
+            <div class="column box-siz padding-1rem">
+                <div class="content col-content box-siz padding-1rem">
+                    <h2>Cathédrale de Meaux</h2>
+                    <div>
+                        <a href="media/meaux.jpg"><img class="minImage" src="media/meaux.jpg" alt="Cathédrale de Meaux"/></a>
+                    </div>
+                </div>
 
-        <h2>Provins</h2>
-        <a href="Images/Lieu/provins.jpg"><img src="Images/Lieu/provins_mini.jpg" alt="Ville de Provins"/></a>
+                <div class="content col-content box-siz padding-1rem">
+                    <h2>Marne-la-Vallée</h2>
+                    <div>
+                        <a href="media/marne-la-vallee.jpg"><img class="minImage" src="media/marne-la-vallee.jpg" alt="Ville de Marne_-la-Vallée"/></a>
+                    </div>
+                </div>
+    
+        
+                <div class="content col-content box-siz padding-1rem">
+                    <h2>Spectacle historique de Meaux</h2>
+                    <div>
+                        <a href="media/spectacle.jpg"><img class="minImage" src="media/spectacle.jpg" alt="Spectacle histoique de Meaux"/></a>
+                    </div>
+                </div>
+    
+        
+                <div class="content col-content box-siz padding-1rem">
+                    <h2>Aquarium SeaLife à Marne-la-Vallée</h2>
+                    <div>
+                        <a href="media/aquarium.jpg"><img class="minImage" src="media/aquarium.jpg" alt="Aquarium à Marne-la-Vallée"/></a>
+                    </div>
+                </div>
+    
+        
+                <div class="content col-content box-siz padding-1rem">
+                    <h2>Musée de la Gendarmerie à Melun</h2>
+                    <div>
+                        <a href="media/musee.jpg"><img class="minImage" src="media/musee.jpg" alt="Musée de la Gendarmerie"/></a>
+                    </div>
+                </div>
+    
+        
+                <div class="content col-content box-siz padding-1rem">
+                    <h2>Jardins du Château de Vaux le Vicomte</h2>
+                    <div>
+                        <a href="media/jardin.jpg"><img class="minImage" src="media/jardin.jpg" alt="Jardin de Vaux-le-Vicomte"/></a>
+                    </div>
+                </div>
+            </div>
 
-        <h2>DisneyLand</h2>
-        <a href="Images/Lieu/disneyland.jpg"><img src="Images/Lieu/disneyland_mini.jpg" alt="DisneyLand"/></a>
-
-        <h2>Barbizon</h2>
-        <a href="Images/Lieu/barbizon.jpg"><img src="Images/Lieu/barbizon_mini.jpg" alt="Statue à Barbizon"/></a>
-
-        <h2>Cathédrale de Meaux</h2>
-        <a href="Images/Lieu/meaux.jpg"><img src="Images/Lieu/meaux_mini.jpg" alt="Cathédrale de Meaux"/></a>
-
-        <h2>Marne-la-Vallée</h2>
-        <a href="Images/Lieu/marne-la-vallee.jpg"><img src="Images/Lieu/marne-la-vallee_mini.jpg" alt="Ville de Marne_-la-Vallée"/></a>
-
-        <h2>Spectacle historique de Meaux</h2>
-        <a href="Images/Lieu/spectacle.jpg"><img src="Images/Lieu/spectacle_mini.jpg" alt="Spectacle histoique de Meaux"/></a>
-
-        <h2>Aquarium SeaLife à Marne-la-Vallée</h2>
-        <a href="Images/Lieu/aquarium.jpg"><img src="Images/Lieu/aquarium_mini.jpg" alt="Aquarium à Marne-la-Vallée"/></a>
-
-        <h2>Musée de la Gendarmerie à Melun</h2>
-        <a href="Images/Lieu/musee.jpg"><img src="Images/Lieu/musee_mini.jpg" alt="Musée de la Gendarmerie"/></a>
-
-        <h2>Jardins du Château de Vaux le Vicomte</h2>
-        <a href="Images/Lieu/jardin.jpg"><img src="Images/Lieu/jardin_mini.jpg" alt="Jardin de Vaux-le-Vicomte"/></a>
+        </div>
     </main>
 
     <footer>
-        <p>Vous pouvez nous contacter à <a href="mailto:webmaster@ceciestuntest.fr">cette adresse</a></p>
-    </footer>
-    
+        <div class="box-siz d-flex jc-between">
+            <p>Télécharger gratuitement le magazine mensuel du département <a href="mensuel.pdf" download class="d-flex align-center">ici <span class="icon m-auto">play_for_work</span></a></p>
+            <p>Vous pouvez nous contacter à <a href="mailto:webmaster@ceciestuntest.fr" class="d-flex align-center">cette adresse <span class="icon">email</span></a></p>
+        </div>
+    </footer>    
 </body>
 </html>

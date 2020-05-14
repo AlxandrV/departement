@@ -44,15 +44,19 @@
 .w-100{ width: 100%;    }
 .m-auto{    margin: auto;   }
 .content{   
-    width: 62.5%;
     margin-bottom: 3.75rem;
     border-radius: 10px;
 }
 .w-50{  width: 50%; }
+.column{    
+    flex-direction: column;
+    flex: 50%;
+}
 .wrap{  flex-wrap: wrap;    }
 .col-content{ background-color: var(--col-content);}
 .box-siz{   box-sizing: border-box; }
 .icon{  font-family: 'Material-Icons';  }
+.padding-1rem{  padding: 1rem;  }
 
 /* Generic ----------------*/
 ul{ list-style: none;   }
@@ -132,8 +136,9 @@ header h1{
     margin-bottom: 1.5625rem;
 }
 
-#content > section, #content > div{
-    padding: 1rem;
+#content{
+    width: 100%;
+    max-width: 1200px;
 }
 
 #content h3{
