@@ -1,3 +1,32 @@
+/* Fonts __________________________________________________________________________________________________*/
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('fonts/RobotoSlab-Regular.eot');
+	src: local('☺'), url('fonts/RobotoSlab-Regular.woff') format('woff'), url('fonts/RobotoSlab-Regular.ttf') format('truetype'), url('fonts/RobotoSlab-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('fonts/RobotoSlab-Bold.eot');
+	src: local('☺'), url('fonts/RobotoSlab-Bold.woff') format('woff'), url('fonts/RobotoSlab-Bold.ttf') format('truetype'), url('fonts/RobotoSlab-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Material-Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/MaterialIcons-Regular.eot);
+    src: local('Material Icons'),
+         local('MaterialIcons-Regular'),
+         url(fonts/MaterialIcons-Regular.woff2) format('woff2'),
+         url(fonts/MaterialIcons-Regular.woff) format('woff'),
+         url(fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
 /* Var --------------------*/
 :root{
     --col-primary: #F0EFEB;
@@ -23,6 +52,7 @@
 .wrap{  flex-wrap: wrap;    }
 .col-content{ background-color: var(--col-content);}
 .box-siz{   box-sizing: border-box; }
+.icon{  font-family: 'Material-Icons';  }
 
 /* Generic ----------------*/
 ul{ list-style: none;   }
@@ -32,11 +62,17 @@ a{
     color: var(--col-content);
 }
 
+strong{
+    font-family: 'Roboto-Bold', serif;
+}
+
 /* Body ____________________________________________________________________________________________________*/
 body{
     margin: 0;
     background-color: var(--col-primary);
     color: #2E2E2E;
+    font-family: 'Roboto-Regular', serif;
+    font-size: 1rem;
 }
 
 /* Header __________________________________________________________________________________________________*/
@@ -96,7 +132,7 @@ header h1{
     margin-bottom: 1.5625rem;
 }
 
-#content > section{
+#content > section, #content > div{
     padding: 1rem;
 }
 
@@ -114,7 +150,7 @@ header h1{
 #content em{    font-style: normal; }
 
 /* Images _________________________________________________________________________________________________*/
-#minImage{
+.minImage{
     border-radius: 5px;
     cursor: pointer;
     transition-duration: 300ms;
@@ -123,7 +159,7 @@ header h1{
     padding: 2px;
 }
 
-#minImage:hover{   opacity: 0.7;   }
+.minImage:hover{   opacity: 0.7;   }
 
 /* Footer _________________________________________________________________________________________________*/
 footer{
@@ -134,15 +170,21 @@ footer{
     height: 100%;
 }
 
+footer > div{
+    position: relative;
+    z-index: 1;
+}
+
 footer p{
     margin: 1rem;
+    display: ruby;
 }
 
 footer a{   color: var(--col-third);}
 
 footer::before{
     content: '';
-    border: solid 1px white;
+    border: solid 1px var(--col-content);
     position: absolute;
     width: calc(100% - 40px);
     height: calc(100% - 60px);
@@ -151,9 +193,9 @@ footer::before{
 
 footer::after{
     content: '';
-    border: solid 1px white;
+    border: solid 1px var(--col-content);
     position: absolute;
     width: calc(100% - 60px);
     height: calc(100% - 40px);
-    margin: -10px 0;
+    margin: -64px 0;
 }

@@ -35,7 +35,7 @@
             <p>Département d'Ile-de-France</p>
         </section>
 
-        <section id="content" class="content m-auto col-content box-siz">
+        <div id="content" class="content m-auto col-content box-siz">
             <section id="resume" class="d-flex">
                 <div class="w-50">
                     <h3>Résumé :</h3>
@@ -62,21 +62,23 @@
                     Pour ce qui est des températures, durant la période de <em>1953</em> à <em>2002</em> on enregistre 3,2° en janvier contre 18,6° en juillet à <em>Melun</em>.
                 </p>
             </section>
-            <section class="d-flex">
-                <a href="media/campagne.jpg"><img id="minImage" class="box-siz" src="media/campagne.jpg" alt="Prairie avec moulin"></a>
+            <div class="d-flex">
+                <a href="media/campagne.jpg"><img class="minImage box-siz" src="media/campagne.jpg" alt="Prairie avec moulin"></a>
 
-                <a href="media/rempart.jpg"><img id="minImage" class="box-siz" src="media/rempart.jpg" alt="Rempart avec une tours"></a>
+                <a href="media/rempart.jpg"><img  class="minImage box-siz" src="media/rempart.jpg" alt="Rempart avec une tours"></a>
 
-                <a href="media/maison_de_ville.jpg"><img id="minImage" class="box-siz" src="media/maison_de_ville.jpg" alt="Vieille maison de ville" ></a>
+                <a href="media/maison_de_ville.jpg"><img class="minImage box-siz" src="media/maison_de_ville.jpg" alt="Vieille maison de ville" ></a>
 
-                <a href="media/domaine.jpg"><img id="minImage" class="box-siz" src="media/domaine.jpg" alt="Domaine bourgeois" ></a>
-            </section>
-        </section>
+                <a href="media/domaine.jpg"><img class="minImage box-siz" src="media/domaine.jpg" alt="Domaine bourgeois" ></a>
+            </div>
+        </div>
     </main>
     
-    <footer class="box-siz d-flex jc-between">
-        <p>Télécharger gratuitement le magazine mensuel du département <a href="mensuel.pdf" download>ici <span class="icon">play_for_work</span></a></p>
-        <p>Vous pouvez nous contacter à <a href="mailto:webmaster@ceciestuntest.fr">cette adresse <span class="icon">email</span></a></p>
+    <footer>
+        <div class="box-siz d-flex jc-between">
+            <p>Télécharger gratuitement le magazine mensuel du département <a href="mensuel.pdf" download class="d-flex align-center">ici <span class="icon m-auto">play_for_work</span></a></p>
+            <p>Vous pouvez nous contacter à <a href="mailto:webmaster@ceciestuntest.fr" class="d-flex align-center">cette adresse <span class="icon">email</span></a></p>
+        </div>
     </footer>
 </body>
 </html>
