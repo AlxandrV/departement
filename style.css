@@ -1,37 +1,44 @@
 /* Var --------------------*/
 :root{
-    --col-primary: #F1FAEE;
-    --col-secondary: #1D3557;
-    --col-third: #457B9D;
+    --col-primary: #F0EFEB;
+    --col-secondary: #A5A58D;
+    --col-third: #DDBEA9;
     --col-content: #fff;
+    --col-header: #A5A58D;
 }
 
 /* Class ------------------*/
 .d-flex{    display: flex;  }
 .jc-between{    justify-content: space-between; }
 .jc-center{ justify-content: center;    }
+.jc-around{ justify-content: space-around;  }
 .align-center{  align-items: center;    }
 .w-100{ width: 100%;    }
 .m-auto{    margin: auto;   }
 .content{   width: 62.5%;   }
 .w-50{  width: 50%; }
 .wrap{  flex-wrap: wrap;    }
+.col-content{ background-color: var(--col-content);}
+.box-siz{   box-sizing: border-box; }
 
 /* Generic ----------------*/
 ul{ list-style: none;   }
 
 a{
     text-decoration: none;
-    color: var(--col-third);
+    color: var(--col-content);
 }
 
 /* Body ____________________________________________________________________________________________________*/
 body{
     margin: 0;
     background-color: var(--col-primary);
+    color: #2E2E2E;
 }
 
 /* Header __________________________________________________________________________________________________*/
+header{ background-color: var(--col-secondary);    }
+
 header > div:first-child{   padding: 0 3rem;    }
 
 header > div > div{
@@ -45,14 +52,14 @@ header nav{ width: 33.75rem;    }
 
 header ul{  padding: 0; }
 
-.actual-links{  border-bottom: solid 3px var(--col-secondary); }
+.actual-links{  border-bottom: solid 3px var(--col-third); }
 
 header li:not(.actual-links){
     transition-duration: 250ms;
     transition-property: border-bottom;
 }
 
-header li:hover{    border-bottom: solid 3px var(--col-secondary);   }
+header li:hover{    border-bottom: solid 3px var(--col-third);   }
 
 header > div:nth-child(2){
     background-image: url(media/background.jpg);
@@ -71,13 +78,13 @@ header h1{
 
 #introduction > h2{
     font-size: 2.8125rem;
-    color: var(--col-secondary);
+    color: var(--col-third);
     margin: 1.625rem auto 0;
 }
 
 #introduction > div{
     height: 2px;
-    background-color: var(--col-secondary);
+    background-color: var(--col-third);
     width: 12%;
 }
 
@@ -85,3 +92,34 @@ header h1{
     font-size: 1.125rem;
     margin-bottom: 1.5625rem;
 }
+
+#content > section{
+    padding: 1rem;
+}
+
+#content h3{
+    font-size: 1.375rem;
+    color: var(--col-third);
+}
+
+#content p{
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
+#content em{
+    font-style: normal;
+}
+
+/* Modal Images ___________________________________________________________________________________________*/
+#minImage{
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 300ms;
+    width: 100%;
+}
+
+#minImage:hover{   opacity: 0.7;   }
+
+
