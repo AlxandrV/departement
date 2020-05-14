@@ -1,7 +1,9 @@
 /* Var --------------------*/
 :root{
-    --col-primary: #2E2E2E;
-    --bg-primary: #EEE4E1;
+    --col-primary: #F1FAEE;
+    --col-secondary: #1D3557;
+    --col-third: #457B9D;
+    --col-content: #fff;
 }
 
 /* Class ------------------*/
@@ -10,25 +12,27 @@
 .jc-center{ justify-content: center;    }
 .align-center{  align-items: center;    }
 .w-100{ width: 100%;    }
+.m-auto{    margin: auto;   }
+.content{   width: 62.5%;   }
+.w-50{  width: 50%; }
+.wrap{  flex-wrap: wrap;    }
 
 /* Generic ----------------*/
 ul{ list-style: none;   }
 
 a{
     text-decoration: none;
-    color: var(--col-primary);
+    color: var(--col-third);
 }
 
 /* Body ____________________________________________________________________________________________________*/
 body{
     margin: 0;
+    background-color: var(--col-primary);
 }
 
 /* Header __________________________________________________________________________________________________*/
-header > div{    
-    padding: 0 3rem;
-    background-color: var(--bg-primary);
-}
+header > div:first-child{   padding: 0 3rem;    }
 
 header > div > div{
     width: 20%; 
@@ -41,14 +45,43 @@ header nav{ width: 33.75rem;    }
 
 header ul{  padding: 0; }
 
-.actual-links{
-    border-bottom: solid 3px #B2967D;
-}
+.actual-links{  border-bottom: solid 3px var(--col-secondary); }
 
 header li:not(.actual-links){
     transition-duration: 250ms;
     transition-property: border-bottom;
 }
-header li:hover{
-    border-bottom: solid 3px #B2967D;
+
+header li:hover{    border-bottom: solid 3px var(--col-secondary);   }
+
+header > div:nth-child(2){
+    background-image: url(media/background.jpg);
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position-y: -406px;
+}
+
+header h1{
+    color: var(--col-third);
+    font-size: 4.0625rem;
+}
+
+/* Main ____________________________________________________________________________________________________*/
+#introduction{ text-align: center;  }
+
+#introduction > h2{
+    font-size: 2.8125rem;
+    color: var(--col-secondary);
+    margin: 1.625rem auto 0;
+}
+
+#introduction > div{
+    height: 2px;
+    background-color: var(--col-secondary);
+    width: 12%;
+}
+
+#introduction > p{
+    font-size: 1.125rem;
+    margin-bottom: 1.5625rem;
 }
