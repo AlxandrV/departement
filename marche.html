@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
-    <title>Marché et Foires</title>
 </head>
 <body>
     <header>
-        <figure><img src="Images/logo_site.png" alt="Logo du site"/></figure>
-        <p>Parisiens pour les uns, provinciaux pour les autres !</p>
+        <div class="d-flex jc-between">
+            <div class="d-flex align-center">
+                <figure><img src="media/logo_site.png" alt="Roue de mou;in au-dessus d'un cours d'eau" width="200" height="94"/></figure>
+            </div>
+            <nav class="d-flex align-center">
+                <ul class="d-flex jc-between w-100">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="lieux.html">Lieux incontournables</a></li>
+                    <li class="actual-links"><a href="marche.html">Marché et foires</a></li>
+                    <li><a href="actualite.html">Actualités</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="d-flex jc-center align-center">
+            <h1>Marché et foires</h1>
+        </div>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="accueil_depart.html">Accueil</a></li>
-            <li><a href="lieux_depart.html">Lieux incontournables</a></li>
-            <li><a href="marche_depart.html">Marché et foires</a></li>
-            <li><a href="actualite_depart.html">Actualités</a></li>
-        </ul>
-    </nav>
     <main>
-        <h1>Marché et foire</h1>
-        <figure><img src="Images/marche.jpg" alt="Photo d'un marché"/></figure>
-
-        <section>
+        <section id="introduction">
             <h2>Marché</h2>
+            <div class="m-auto"></div>
+            <p>Liste des différents marchés d'Ile de France</p>
+        </section>
 
-            <p>Malheureusement les marchés de toutes nos communes sont reportés à date ultérieur pour cause de chaleur estival tardant à se faire sentir.<br/>
-            Nous vous tiendrons informé lorsque qu'il fera plus chaud.</p>
+        <section id="content" class="m-auto box-siz">
+            <section class="content col-content padding-1rem d-flex">
+                <div class="w-50 d-flex column jc-center">
+                    <h3>Marché</h3>
+                    <p>Malheureusement les marchés de toutes nos communes sont reportés à date ultérieur pour cause de chaleur estival tardant à se faire sentir.<br/>
+                    Nous vous tiendrons informé lorsque qu'il fera plus chaud.</p>
+                </div>
+                <div class="w-50 jc-center padding-1rem"><img class="minImage"src="media/marche.jpg" alt="Homme à un stand sur un marché de campagne" ></div>
+            </section>
         </section>
         
         <section>
@@ -43,7 +53,10 @@
     </main>
 
     <footer>
-        <p>Vous pouvez nous contacter à <a href="mailto:webmaster@ceciestuntest.fr">cette adresse</a></p>
+        <div class="box-siz d-flex jc-between">
+            <p>Télécharger gratuitement le magazine mensuel du département <a href="mensuel.pdf" download class="d-flex align-center">ici <span class="icon m-auto">play_for_work</span></a></p>
+            <p>Vous pouvez nous contacter à <a href="mailto:webmaster@ceciestuntest.fr" class="d-flex align-center">cette adresse <span class="icon">email</span></a></p>
+        </div>
     </footer>
 </body>
 </html>
