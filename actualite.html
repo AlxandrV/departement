@@ -1,86 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
-    <title>Actualités</title>
-</head>
-<body>
-    <header>
-        <figure><img src="Images/logo_site.png" alt="Logo du site"/></figure>
-        <p>Parisiens pour les uns, provinciaux pour les autres !</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="accueil_depart.html">Accueil</a></li>
-            <li><a href="lieux_depart.html">Lieux incontournables</a></li>
-            <li><a href="marche_depart.html">Marché et foires</a></li>
-            <li><a href="actualite_depart.html">Actualités</a></li>
-        </ul>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="d-flex jc-between">
+                <div class="d-flex align-center">
+                    <figure><img src="media/logo_site.png" alt="Roue de mou;in au-dessus d'un cours d'eau" width="200" height="94"/></figure>
+                </div>
+                <nav class="d-flex align-center">
+                    <ul class="d-flex jc-between w-100">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="lieux.html">Lieux incontournables</a></li>
+                        <li><a href="marche.html">Marché et foires</a></li>
+                        <li class="actual-links"><a href="actualite.html">Actualités</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="d-flex jc-center align-center">
+                <h1>Marché et foires</h1>
+            </div>
+        </header>
+    
     <main>
-        <h1>Actualités</h1>
-
-        <section>
-            <h2>Tremplin #77</h2>
-
-            <figure><img src="Images/tremplin.jpg" alt="Affiche Tremplin #77"></figure>
-
-            <p>L'éditions 2020 <em>Tremplin #77</em> repousse sa période d'inscription, initialement prévue jusqu'au <em>20 mars</em>, jusqu'au <em>12 avril</em>. Pour cause de température un peu fraiche en cemoment.<br/>
-            Cela permettra aux musiciens et musiciennes, auteurs compositeurs de Seine-et-Marne retardataire une chance de s'inscrire.</p>
+        <section id="introduction">
+            <h2>Actualité</h2>
+            <div class="m-auto"></div>
+            <p>Divers actus de la région</p>
         </section>
-        
-        <section>
-            <h2>Concour Suspense</h2>
 
-            <figure><img src="Images/Concours-Suspense.jpg" alt="Affiche concours Suspense"></figure>
-
-            <p>Début du concours <em>Suspense</em> ouvert aux <em>collégiens</em> de Seine-et-Marne. Parrainé par <em>Jean-Hugues Oppel</em> auteur de romans noirs.<br/>
-            Les lauréats du concours remporteront une tablette numérique et un livre !</p>
-        </section>
-        
-        <section>
-            <h2>Les routes repassent à 90 km/h</h2>
-
-            <figure><img src="Images/routes.jpg" alt="Affiche des routes de Seine-et-Marne"></figure>
-
-            <p>Au printemps débutera l'installation de panneaux <em>90 km/h</em> dans le département. Premier département francilien à opérer ce changement.<br/>
-            On comptera <em>489 km</em> de routes départementales concerné par cette mesure.</p>
-        </section>
-        
-        <section>
-            <h2>La fibre à la maison</h2>
-
-            <figure><img src="Images/fibre.jpg" alt="Photo d'un câble fibre"></figure>
-
-            <p>D'ici <em>2023</em>, la Seine-et-Marne se verra la totalité de son territoire <em>entièrement</em> fibré. Projet ambitieux que se sont engagés les opérateurs <em>Orange</em> et <em>SFR</em></p>
-        </section>
-        
-        <section>
-            <h2>Election municipale sur écoute</h2>
-
-            <figure><img src="Images/mairie.jpg" alt="Photo d'une mairie Française"></figure>
-
-            <p>Durant les <em>élections municipale</em> de <em>Chartrettes</em>, une des candidate à porté <em>plainte contre X</em> pour atteinte à la vie privée, suite à la découverte d'un <em>dictaphone dissimulé</em> au cours de sa campagne électorale.</p>
-
-        </section>
-        
-        <section>
-            <h2>Privé d'Internet, téléphone et TV</h2>
-
-            <figure><img src="Images/bouche_egout.jpg" alt="Photo d'une voiture sur la route"></figure>
-
-            <p>A <em>Courpalay</em>, la commune se fait <em>voler</em> les <em>câbles téléphonique</em> pour la sixième fois de l'année. Cela à privé <em>173 foyer</em> de télécommunications.</p>
-        </section>
-        
+        <div id="content" class="m-auto col-content content bo-siz padding-1rem">
+            <section class="d-flex">
+                <div>
+                    <h3>Tremplin #77</h3>
+                    <p>L'éditions 2020 <em>Tremplin #77</em> repousse sa période d'inscription, initialement prévue jusqu'au <em>20 mars</em>, jusqu'au <em>12 avril</em>. Pour cause de température un peu fraiche en cemoment.<br/>
+                    Cela permettra aux musiciens et musiciennes, auteurs compositeurs de Seine-et-Marne retardataire une chance de s'inscrire.</p>
+                </div>
+    
+                <figure><img class="imgNoLinks" src="media/tremplin.jpg" alt="Affiche Tremplin #77"></figure>
+            </section>
+            
+            <section class="d-flex">
+                <div>
+                    <h3>Concour Suspense</h3>
+                    <p>Début du concours <em>Suspense</em> ouvert aux <em>collégiens</em> de Seine-et-Marne. Parrainé par <em>Jean-Hugues Oppel</em> auteur de romans noirs.<br/>
+                    Les lauréats du concours remporteront une tablette numérique et un livre !</p>
+                </div>
+    
+                <figure><img class="imgNoLinks" src="media/concours-suspense.jpg" alt="Affiche concours Suspense"></figure>
+            </section>
+            
+            <section class="d-flex">
+                <div>
+                    <h3>Les routes repassent à 90 km/h</h3>
+                    <p>Au printemps débutera l'installation de panneaux <em>90 km/h</em> dans le département. Premier département francilien à opérer ce changement.<br/>
+                    On comptera <em>489 km</em> de routes départementales concerné par cette mesure.</p>
+                </div>
+    
+                <figure><img class="imgNoLinks" src="media/routes.jpg" alt="Affiche des routes de Seine-et-Marne"></figure>  
+            </section>
+            
+            <section class="d-flex">
+                <div>
+                    <h3>La fibre à la maison</h3>
+                    <p>D'ici <em>2023</em>, la Seine-et-Marne se verra la totalité de son territoire <em>entièrement</em> fibré. Projet ambitieux que se sont engagés les opérateurs <em>Orange</em> et <em>SFR</em></p>
+                </div>
+    
+                <figure><img class="imgNoLinks" src="media/fibre.jpg" alt="Photo d'un câble fibre"></figure> 
+            </section>
+            
+            <section class="d-flex">
+                <div>
+                    <h3>Election municipale sur écoute</h3>
+                    <p>Durant les <em>élections municipale</em> de <em>Chartrettes</em>, une des candidate à porté <em>plainte contre X</em> pour atteinte à la vie privée, suite à la découverte d'un <em>dictaphone dissimulé</em> au cours de sa campagne électorale.</p>
+                </div>
+    
+                <figure><img class="imgNoLinks" src="media/mairie.jpg" alt="Photo d'une mairie Française"></figure>
+            </section>
+            
+            <section class="d-flex">
+                <div>
+                    <h3>Privé d'Internet, téléphone et TV</h3>
+                    <p>A <em>Courpalay</em>, la commune se fait <em>voler</em> les <em>câbles téléphonique</em> pour la sixième fois de l'année. Cela à privé <em>173 foyer</em> de télécommunications.</p>
+                </div> 
+    
+                <figure><img class="imgNoLinks" src="media/bouche_egout.jpg" alt="Photo d'une voiture sur la route"></figure>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>Vous pouvez nous contacter à <a href="mailto:webmaster@ceciestuntest.fr">cette adresse</a></p>
+        <div class="box-siz d-flex jc-between">
+            <p>Télécharger gratuitement le magazine mensuel du département <a href="mensuel.pdf" download class="d-flex align-center">ici <span class="icon m-auto">play_for_work</span></a></p>
+            <p>Vous pouvez nous contacter à <a href="mailto:webmaster@ceciestuntest.fr" class="d-flex align-center">cette adresse <span class="icon">email</span></a></p>
+        </div>
     </footer>
 </body>
 </html>
