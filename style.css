@@ -302,3 +302,18 @@ footer::after{
         display: none;
     }
 }
+
+@media screen and (max-width: 479.98px){
+    header > div:first-child{
+        padding: 0;
+    }
+
+    #marche > section:nth-child(2) > div:not(:first-child){
+        padding: 1rem;
+        text-align: center;
+    }
+
+    footer > div > p{
+        font-size: .8rem;
+    }
+}
