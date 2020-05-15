@@ -264,3 +264,41 @@ footer::after{
         align-self: center;
     }
 }
+
+@media screen and (max-width: 575.98px){
+    header >div:first-child{
+        height: 120px;
+    }
+
+    header nav{
+        height: 90%;
+    }
+
+    header h1{
+        font-size: 3.5rem;
+    }
+
+    #marche > section{
+        flex-direction: column;
+    }
+
+    .w-50{
+        width: 100%;
+    }
+
+    #marche > section:first-child > div:nth-child(2){
+        display: none;
+    }
+
+    #marche > section:nth-child(2) > div:not(:nth-child(2n+1)) > div:nth-child(2){
+        display: none;
+    }
+
+    #marche > section:nth-child(2) > div:not(:nth-child(2n+2)) > div:first-child{
+        display: none;
+    } 
+
+    #actus figure{ 
+        display: none;
+    }
+}
